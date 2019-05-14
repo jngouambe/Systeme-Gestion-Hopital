@@ -1,0 +1,18 @@
+USE [Hopital]
+GO
+
+
+CREATE TABLE [dbo].[tblChambres](
+	[IdChambre] [int] IDENTITY(100,1) NOT NULL,
+	TypeChambre [varchar](50) )
+	
+GO
+
+
+INSERT INTO [dbo].[tblChambres]
+           ([TypeChambre])
+     VALUES
+           ('privée'),('semi-privée'),('standard')
+GO
+
+

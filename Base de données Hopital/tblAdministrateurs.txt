@@ -1,0 +1,7 @@
+use Hopital
+go 
+create table tblAdministrateurs(
+idAdministrateur int identity(1,1),
+Nom varchar(50),
+NomUtilisateur varchar(20) ,
+MotPasse varchar(15)

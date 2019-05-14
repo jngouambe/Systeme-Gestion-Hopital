@@ -1,0 +1,10 @@
+
+                                                                                        2018-10-22 14:29:57
+
+  Nom complet du patient : yves Desharnais
+
+  Nombres de jours passé à l'hôpital : 3 jour(s).
+
+
+  Montant total à payer : 0$.
+--------------------------------------------------------------------------------------------------------------------------

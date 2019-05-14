@@ -1,0 +1,36 @@
+USE [Hopital]
+GO
+
+
+CREATE TABLE [dbo].[tblDisponibilites](
+	NombreLits int ,Departement varchar(30),TypeChambre varchar(15)
+) ON [PRIMARY]
+GO
+
+
+INSERT INTO [dbo].[tblDisponibilites]
+           ([NombreLits]
+           ,[Departement]
+           ,[TypeChambre])
+     VALUES
+           (1,'Chirurgie','privée'),
+		   (2,'Chirurgie','semi-privée'),
+		   (4,'Chirurgie','standard'),
+
+		   (1,'Radiologie','privée'),
+		   (2,'Radiologie','semi-privée'),
+		   (4,'Radiologie','standard'),
+		   
+		   (1,'Pédiatrie','privée'),
+		   (2,'Pédiatrie','semi-privée'),
+		   (4,'Pédiatrie','standard'),
+
+		   (1,'Gynécologie','privée'),
+		   (2,'Gynécologie','semi-privée'),
+		   (4,'Gynécologie','standard'),
+
+		   (1,'Dermatologie','privée'),
+		   (2,'Dermatologie','semi-privée'),
+		   (4,'Dermatologie','standard')
+GO
+

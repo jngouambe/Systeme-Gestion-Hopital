@@ -1,0 +1,18 @@
+use Hopital
+go
+CREATE TABLE [dbo].[tblInfirmiers](
+	[IdInfirmier] [int] IDENTITY(200,1) NOT NULL,
+	[Nom] [varchar](35) NULL,
+	[Prenom] [varchar](25) NULL)
+go
+
+
+INSERT INTO [dbo].[tblInfirmiers]
+           ([Nom]
+           ,[Prenom])
+     VALUES
+           ('kegne','marius'),('masso','july')
+GO
+
+
+

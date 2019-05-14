@@ -1,0 +1,74 @@
+USE [Hopital]
+GO
+
+
+CREATE TABLE [dbo].[tblLits](
+	[IdLit] [int] IDENTITY(300,1) NOT NULL,
+	NumeroLit varchar(25),
+	Departement varchar(25),
+	[TypeChambre] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+
+INSERT INTO [dbo].[tblLits]
+           ([NumeroLit]
+           ,[Departement]
+           ,[TypeChambre])
+     VALUES
+	 /******            chirurgie       ******/
+	     ('Chiru01','Chirurgie','privée'),
+
+		 ('Chiru01','Chirurgie','semi-privée'),
+		 ('Chiru02','Chirurgie','semi-privée'),
+
+		 ('Chiru01','Chirurgie','standard'),
+		 ('Chiru02','Chirurgie','standard'),
+		 ('Chiru03','Chirurgie','standard'),
+		 ('Chiru04','Chirurgie','standard'),
+      /******            Radiologie       ******/
+		 ('Radio01','Radiologie','privée'),
+
+	     ('Radio01','Radiologie','semi-privée'),
+		 ('Radio02','Radiologie','semi-privée'),
+
+		 ('Radio01','Radiologie','standard'),
+		 ('Radio02','Radiologie','standard'),
+		 ('Radio03','Radiologie','standard'),
+		 ('Radio04','Radiologie','standard'),
+		 /******            Pédiatrie       ******/
+		 ('Pédia01','Pédiatrie','privée'),
+
+	     ('Pédia01','Pédiatrie','semi-privée'),
+		 ('Pédia02','Pédiatrie','semi-privée'),
+
+		 ('Pédia01','Pédiatrie','standard'),
+		 ('Pédia02','Pédiatrie','standard'),
+		 ('Pédia03','Pédiatrie','standard'),
+		 ('Pédia04','Pédiatrie','standard'),
+
+		  /******            Dermatologie       ******/
+		 ('Derma01','Dermatologie','privée'),
+
+		 ('Derma01','Dermatologie','semi-privée'),
+		 ('Derma02','Dermatologie','semi-privée'),
+
+		 ('Derma01','Dermatologie','standard'),
+		 ('Derma02','Dermatologie','standard'),
+		 ('Derma03','Dermatologie','standard'),
+		 ('Derma04','Dermatologie','standard'),
+
+		   /******            Gynécologie       ******/
+		  ('Gynéc01','Gynécologie','privée'),
+
+		 ('Gynéc01','Gynécologie','semi-privée'),
+		 ('Gynéc02','Gynécologie','semi-privée'),
+
+		 ('Gynéc01','Gynécologie','standard'),
+		 ('Gynéc02','Gynécologie','standard'),
+		 ('Gynéc03','Gynécologie','standard'),
+		 ('Gynéc04','Gynécologie','standard')
+GO
+
+
+
+

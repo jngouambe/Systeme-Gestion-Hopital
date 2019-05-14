@@ -1,0 +1,19 @@
+USE [Hopital]
+GO
+
+CREATE TABLE [dbo].[tblDepartements](
+	[IdDepartement] [int] IDENTITY(10,1) NOT NULL,
+	Departement varchar (35))
+
+
+GO
+
+INSERT INTO [dbo].[tblDepartements]
+           ([Departement])
+     VALUES
+           ('Chirurgie'),('Radiologie'),
+		   ('Pédiatrie'),('Radiologie'),
+		   ('Dermatologie'),('Gynécologie')
+GO
+	
+

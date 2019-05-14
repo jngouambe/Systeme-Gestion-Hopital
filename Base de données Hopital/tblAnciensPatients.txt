@@ -1,0 +1,17 @@
+USE [Hopital]
+GO
+
+CREATE TABLE [dbo].[tblAnciensPatients](
+	[IdPatient] [int] IDENTITY(10000,1) NOT NULL,
+	[NomPatient] [varchar](30) NULL,
+	[PrenomPatient] [varchar](25) NULL,
+	[DateNaissance] [datetime] NULL,
+	[Departement] [varchar](25) NULL,
+	[AssurancePrivee] [varchar](5) NULL,
+	[TypeChambre] [varchar](25) NULL,
+	[LocationTelevision] [varchar](5) NULL,
+	[LocationTelephone] [varchar](5) NULL
+) ON [PRIMARY]
+GO
+
+

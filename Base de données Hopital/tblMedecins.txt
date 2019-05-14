@@ -1,0 +1,7 @@
+USE [Hopital]
+GO
+
+CREATE TABLE [dbo].[tblMedecins](
+	[IdMedecin] [int] IDENTITY(100,1) NOT NULL,
+	Nom varchar (35),Prenom varchar(25) ,DateNaissance datetime,Departement varchar(35))
+	
